@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Testing_System_Assignment_1
+    username: root
+    password: talamvua
+  jpa:
+    show-sql: false
+    hibernate.ddl-auto: none
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  data:
+    mongodb:
+      database: msb
+      host: localhost
+      port: 27017
